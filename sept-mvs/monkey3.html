@@ -1,0 +1,17 @@
+---
+layout: default
+title: Survey Monkey Popoup  - Test Page
+---
+
+<a id=""myLink" href="https://www.surveymonkey.co.uk/r/NF8SMMG?varPage=CURRENTPAGE.html"></a>
+
+<script>
+<!-- Now we can grab the link like so: -->
+var link = document.getElement('myLink');
+
+<!-- Let's get the URL again, and give it a better variable name:-->
+var url = window.location.href;
+
+<!-- Now let's update the HREF attribute of link:-->
+link.href = link.href.replace('CURRENTPAGE.html', url);
+</script>
