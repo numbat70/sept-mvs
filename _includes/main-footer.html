@@ -6,7 +6,15 @@
                 <br />
                     <a href="/sept-mvs/sept-mvs/google.html">Is there something wrong with this site? (Google Form)</a>
             <br />
+                    <a id="myLink" target="_blank" href="https://www.surveymonkey.co.uk/r/NF8SMMG?varPage=null.html">Is there something wrong with this page? (SURVEY MONKEY)</a>
+            <br />
         </div>
+        
+        
+        <script>                          
+            var x = window.location.href;
+            document.getElementById("myLink").href = "https://www.surveymonkey.co.uk/r/NF8SMMG?varPage="+encodeURIComponent(x);                                                       
+        </script>
         
         
         
