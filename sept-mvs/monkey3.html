@@ -6,12 +6,7 @@ Link:
 <a id=""myLink" href="https://www.surveymonkey.co.uk/r/NF8SMMG?varPage=CURRENTPAGE.html">Is there something wrong with this page?</a>
 
 <script>
-<!-- Now we can grab the link like so: -->
-var link = document.getElement('myLink');
-
-<!-- Let's get the URL again, and give it a better variable name:-->
-var url = window.location.href;
-
-<!-- Now let's update the HREF attribute of link:-->
-link.href = link.href.replace('CURRENTPAGE.html', url);
+var pageUrl = window.location.href;
+var myURL = "https://www.surveymonkey.co.uk/r/NF8SMMG?varPage=" + pageUrl;
+docment.getElementById("myLink").href = myURL;
 </script>
