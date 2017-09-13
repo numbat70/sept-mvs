@@ -22,7 +22,14 @@ document.getElementById("myLink").href = "https://www.surveymonkey.co.uk/r/NF8SM
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 
 <script>
-$("#target" ).click(function() {
-  alert( "Handler for .click() called." );
-});
+$("#target" ).click(function(e,t,s,c){
+
+var n,o,i;e.SMCX=e.SMCX||[],t.getElementById(c)||(n=t.getElementsByTagName(s),o=n[n.length-1],i=t.createElement(s),i.type="text/javascript",i.async=!0,i.id=c,i.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/l4suVLF0x9Z1aQC0Ry91NKE0Gpi00mYsqeTKeBI9pVBed_2BY566gsifw_2FlCrc4fTL.js"].join(""),o.parentNode.insertBefore(i,o))})(window,document,"script","smcx-sdk");
+
+alert( "Handler for .click() called." );
+  
+  
+  
+  
+
 </script>
